@@ -1,0 +1,31 @@
+ESPAÑOL (SPANISH)
+-----------------
+
+* Contenido
+
+Este conjunto de plantillas facilitan enormemente la creación de transparencias para clase. 
+
+Normalmente, se necesitarán copiar los siguientes ficheros al directorio de trabajo:
+   - Makefile
+   - draft.tex
+   - paper.tex
+   - slides.tex
+
+Habrá que crear los siguientes ficheros a mano (aunque se proporcionan plantillas genéricas):
+   - miguelslides.sty : Contiene el estilo de las transparencias
+   - thiscommon.sty   : Contiene información del documento particular: títulos, autor, ...
+   - content.tex      : Contenido de la presentación
+
+Otros ficheros que se incluyen son:
+   - beamercolorthemeintegral.sty : colores de ejemplo (se incluye en el miguelslides.sty).
+
+
+* Funcionamiento.
+
+Un "make" normal creará únicamente el fichero draft.pdf. Éste contiene una versión rápida pero no terminada del documento. Es muy útil para crear las transparencias en poco tiempo, pero el nivel de detalle es muy bajo.
+
+"make all" permite crear dos ficheros más: paper.pdf y slides.pdf. Estos ficheros contienen el documento listo para imprimir sobre papel y para mostrar en la presentación, respectivamente. Tardará más tiempo en crearlos, pero la calidad es muy superior.
+
+"make clean" limpia de basura el directorio
+
+"make vclean" lo deja tal cual está en el repositorio.
