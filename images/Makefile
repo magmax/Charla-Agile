@@ -1,6 +1,8 @@
 IMAGES= agilemanifestbg.jpg panico.jpg scrum.jpg pomodoro.png junit.jpg	\
-	pruebas.jpg programando.png trabajando.png wtfm.jpg \
-	kunagidashboard.png kunagiwhiteboard.png
+	pruebas.jpg programando.png trabajando.png wtfm.jpg panelScrum.jpg\
+	kunagidashboard.png kunagiwhiteboard.png \
+	ventanaRota.jpg globos.jpg profesional.jpg \
+	mentorsRobertMartin.jpg mentorsCunningham.jpg mentorsKentBeck.jpg
 
 all:$(IMAGES)
 	echo all images were downloaded
@@ -14,6 +16,9 @@ panico.jpg:
 
 scrum.jpg:
 	wget http://netprosolutions.com/Mohicanosblog/wp-content/uploads/2009/08/scrum-cambios.jpg -O $@
+
+panelScrum.jpg:
+	wget http://farm2.static.flickr.com/1180/1061748975_d53cbc588f_z.jpg?zz=1 -O$@
 
 pomodoro.png:
 	wget http://www.danielrodrigo.net/wp-content/uploads/2010/09/pomodoro.png -O $@
@@ -41,6 +46,23 @@ kunagidashboard.png:
 kunagiwhiteboard.png:
 	wget http://kunagi.org/screenshots/whiteboard.png -O $@
 
+ventanaRota.jpg:
+	wget http://nocheoscuradelalma.files.wordpress.com/2011/02/ventana-rota.jpg -O $@
+
+globos.jpg:
+	wget http://www.berbes.com/blog/wp-content/uploads/2011/02/globos2.jpg -O $@
+
+profesional.jpg:
+	wget http://edendevelopment.es/images/robert_c.png -O $@
+
+mentorsRobertMartin.jpg:
+	wget http://www.fabrice-aimetti.fr/dotclear/public/photos/robert-c-martin.jpg -O $@
+
+mentorsCunningham.jpg:
+	wget http://cla.calpoly.edu/~lcall/354/Ward_Cunningham_at_Wikimania_2006.jpg -O $@
+
+mentorsKentBeck.jpg:
+	wget http://www.threeriversinstitute.org/Kent%202%20thumbnail.jpg -O $@
 
 clean:
 	$(RM) $(IMAGES)
