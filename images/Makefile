@@ -27,7 +27,7 @@ junit.jpg:
 	wget http://www.adictosaltrabajo.com/tutoriales/junit/junit.2.jpg -O $@
 
 pruebas.jpg:
-	wget wget http://blog.publicitis.com/wp-content/uploads/2011/02/pruebas_con_gaseosa.jpeg -O $@
+	wget http://blog.publicitis.com/wp-content/uploads/2011/02/pruebas_con_gaseosa.jpeg -O $@
 
 programando.png:
 	wget http://ekipo4.galeon.com/images/programando_3.gif -O programando.gif
