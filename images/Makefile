@@ -10,10 +10,10 @@ agilemanifestbg.jpg:
 
 
 panico.jpg:
-	wget http://historiasconhistoria.es/imagenes/munch/elgrito1.jpg -O $@
+	wget http://3.bp.blogspot.com/_pQ2w6P1DdW0/S8zUxg4imEI/AAAAAAAABNw/c49E4tIunWY/s1600/panico.jpg -O $@
 
 scrum.jpg:
-	wget http://historiasconhistoria.es/imagenes/munch/elgrito1.jpg -O $@
+	wget http://netprosolutions.com/Mohicanosblog/wp-content/uploads/2009/08/scrum-cambios.jpg -O $@
 
 pomodoro.png:
 	wget http://www.danielrodrigo.net/wp-content/uploads/2010/09/pomodoro.png -O $@
