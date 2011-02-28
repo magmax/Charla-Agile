@@ -1,5 +1,5 @@
-LTX=$(wildcard *.tex)
-PDF=$(patsubst %.tex, %.pdf, $(LTX))
+TEX=$(wildcard *.tex)
+PDF=$(patsubst %.tex, %.pdf, $(TEX))
 STY=$(wildcard *.sty)
 
 OBJETIVES=draft.pdf paper.pdf slides.pdf
@@ -10,8 +10,7 @@ draft: images draft.pdf
 all: images $(OBJETIVES)
 
 
-%.pdf: %.tex $(STY) content.tex
-	touch $<
+%.pdf: %.tex $(STY) $(TEX)
 	rubber -d $<
 
 images::
