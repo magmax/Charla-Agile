@@ -2,12 +2,9 @@ TEX=$(wildcard *.tex)
 PDF=$(patsubst %.tex, %.pdf, $(TEX))
 STY=$(wildcard *.sty)
 
-OBJETIVES=draft.pdf paper.pdf slides.pdf
 
 #by default, only "draft" is built
-draft: images draft.pdf
-
-all: images $(OBJETIVES)
+all: images charla.pdf
 
 
 %.pdf: %.tex $(STY) $(TEX)
