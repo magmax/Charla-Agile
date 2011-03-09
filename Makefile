@@ -4,7 +4,7 @@ STY=$(wildcard *.sty)
 
 
 #by default, only "draft" is built
-all: images charla.pdf
+all: images charla.pdf practica.pdf
 
 
 %.pdf: %.tex $(STY) $(TEX)
