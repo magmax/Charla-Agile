@@ -1,6 +1,6 @@
 IMAGES= agilemanifestbg.jpg panico.jpg scrum.jpg pomodoro.png junit.jpg	\
 	pruebas.jpg programando.png trabajando.png wtfm.jpg panelScrum.jpg\
-	kunagidashboard.png kunagiwhiteboard.png \
+	kunagidashboard.png kunagiwhiteboard.png agilefantstories.png agilefantburndown.png\
 	ventanaRota.jpg globos.jpg profesional.jpg ganador.jpg domino.jpg camino.jpg\
 	herramientas.jpg documentos.jpg contrato.jpg plan.jpg\
 	cleancode.png\
@@ -66,6 +66,12 @@ kunagidashboard.png:
 
 kunagiwhiteboard.png:
 	$(WGET) http://kunagi.org/screenshots/whiteboard.png
+
+agilefantstories.png:
+	$(WGET) http://www.userstories.com/system/product_image/0000/0140/screen_3_project_management.png
+
+agilefantburndown.png:
+	$(WGET) http://www.userstories.com/system/product_image/0000/0144/screen_4_iteration_burndown.png
 
 ventanaRota.jpg:
 	$(WGET) http://nocheoscuradelalma.files.wordpress.com/2011/02/ventana-rota.jpg
