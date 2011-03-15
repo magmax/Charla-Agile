@@ -14,6 +14,7 @@
 %% Colores
 %\definecolor{codebg}{rgb}{0.5, 0.5, 0.7}
 %\definecolor{white}{gray}{1.0}
+\definecolor{codebg}{rgb}{1, 1, 1}
 
 %% entornos
 \newenvironment{ejer}
@@ -23,30 +24,44 @@
 \newenvironment{ejem}
 {\begin{exampleblock}{Ejemplo}}{\end{exampleblock}}
 
-\beamerboxesdeclarecolorscheme{salida}{red}{red!15!averagebackgroundcolor}
-\beamerboxesdeclarecolorscheme{solucion}{structure}{yellow!15!averagebackgroundcolor}
+
+\beamerboxesdeclarecolorscheme{fail}{red}{red!15!averagebackgroundcolor}
+\beamerboxesdeclarecolorscheme{pass}{green}{green!15!averagebackgroundcolor}
 %\setbeamercolor{example text}{fg=examplebg!50!black}
 
-\newenvironment{salida}
-{\begin{beamerboxesrounded}[scheme=salida, shadow=true]{Salida}}
-  {\end{beamerboxesrounded}}
+\newenvironment{testfail}
+{
+\begin{beamerboxesrounded}[scheme=fail,shadow=true,width=8cm]{Test}
+}
+{
+\end{beamerboxesrounded}
+}
 
-\newenvironment{solucion}
-{\begin{beamerboxesrounded}[scheme=solucion, shadow=true]{Solución}}
-  {\end{beamerboxesrounded}}
+\newenvironment{testpass}
+{
+\begin{beamerboxesrounded}[scheme=pass, shadow=true,width=8cm]{Test}
+}
+{
+\end{beamerboxesrounded}
+}
 
+\newenvironment{codefail}
+{
+\hspace{2.5cm}
+\begin{beamerboxesrounded}[scheme=fail, shadow=true,width=8cm]{C\'odigo}
+}
+{
+\end{beamerboxesrounded}
+}
 
-%% órdenes
-
-\newcommand{\comando}[1]{\textcolor{-red!75}{#1}}
-
-\newcommand{\texcom}[1]{\textcolor{-red!75}{$\backslash$#1}}
-\newcommand{\texcomarg}[2]{\textcolor{-red!75}{$\backslash$#1$\{$#2$\}$}}
-\newcommand{\texcomopcarg}[3]{\textcolor{-red!75}{$\backslash$#1[#2]$\{$#3$\}$}}
-\newcommand{\texcomopc}[2]{\textcolor{-red!75}{$\backslash$#1[#2]}}
-
-
-\newcommand{\material}[1]{\textcolor{-blue!75}{\tiny{#1}}}
+\newenvironment{codepass}
+{
+\hspace{2.5cm}
+\begin{beamerboxesrounded}[scheme=pass, shadow=true,width=8cm]{C\'odigo}
+}
+{
+\end{beamerboxesrounded}
+}
 
 
 % $Header: /cvsroot/latex-beamer/latex-beamer/solutions/conference-talks/conference-ornate-20min.en.tex,v 1.6 2004/10/07 20:53:08 tantau Exp $
@@ -150,5 +165,61 @@
 \beamerboxesdeclarecolorscheme{salida}{structure}{red!15!averagebackgroundcolor}
 \beamerboxesdeclarecolorscheme{solucion}{structure}{yellow!15!averagebackgroundcolor}
 %% Colores
-\definecolor{codebg}{rgb}{0.9, 0.9, 0.9}
+%\definecolor{codebg}{rgb}{0.9, 0.9, 0.9}
+}
+
+
+
+
+
+
+%% Python settings taken from http://licejus.lt/~gintas/files/pythonlisting.tex
+\definecolor{lgray}{gray}{0.5}
+\definecolor{lgreen}{rgb}{0,0.5,0}
+\definecolor{llightgreen}{rgb}{0,0.7,0}
+\definecolor{lpurple}{rgb}{0.5,0,0.5}
+\definecolor{ldarkred}{rgb}{0.5,0,0}
+
+\lstset{
+language=python,
+basicstyle=\ttfamily\tiny\setstretch{0},
+stringstyle=\color{lgreen},
+showstringspaces=false,
+alsoletter={1234567890},
+otherkeywords={\ , \}, \{},
+keywordstyle=\color{blue},
+emph={access,and,as,break,class,continue,def,del,elif,else,%
+except,exec,finally,for,from,global,if,import,in,is,%
+lambda,not,or,pass,print,raise,return,try,while,assert},
+emphstyle=\color{orange}\bfseries,
+emph={[2]self},
+emphstyle=[2]\color{lgray},
+emph={[4]ArithmeticError,AssertionError,AttributeError,BaseException,%
+DeprecationWarning,EOFError,Ellipsis,EnvironmentError,Exception,%
+False,FloatingPointError,FutureWarning,GeneratorExit,IOError,%
+ImportError,ImportWarning,IndentationError,IndexError,KeyError,%
+KeyboardInterrupt,LookupError,MemoryError,NameError,None,%
+NotImplemented,NotImplementedError,OSError,OverflowError,%
+PendingDeprecationWarning,ReferenceError,RuntimeError,RuntimeWarning,%
+StandardError,StopIteration,SyntaxError,SyntaxWarning,SystemError,%
+SystemExit,TabError,True,TypeError,UnboundLocalError,UnicodeDecodeError,%
+UnicodeEncodeError,UnicodeError,UnicodeTranslateError,UnicodeWarning,%
+UserWarning,ValueError,Warning,ZeroDivisionError,abs,all,any,apply,%
+basestring,bool,buffer,callable,chr,classmethod,cmp,coerce,compile,%
+complex,copyright,credits,delattr,dict,dir,divmod,enumerate,eval,%
+execfile,exit,file,filter,float,frozenset,getattr,globals,hasattr,%
+hash,help,hex,id,input,int,intern,isinstance,issubclass,iter,len,%
+license,list,locals,long,map,max,min,object,oct,open,ord,pow,property,%
+quit,range,raw_input,reduce,reload,repr,reversed,round,set,setattr,%
+slice,sorted,staticmethod,str,sum,super,tuple,type,unichr,unicode,%
+vars,xrange,zip},
+emphstyle=[4]\color{lpurple}\bfseries,
+upquote=true,
+morecomment=[s][\color{llightgreen}]{"""}{"""},
+commentstyle=\color{red}\slshape,
+literate={>>>}{\textbf{\textcolor{ldarkred}{>{>}>}}}3%
+         {...}{{\textcolor{lgray}{...}}}3,
+procnamekeys={def,class},
+procnamestyle=\color{blue}\textbf,
+#1
 }

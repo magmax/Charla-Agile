@@ -1,7 +1,7 @@
 IMAGES= agilemanifestbg.jpg panico.jpg scrum.jpg pomodoro.png junit.jpg	\
 	pruebas.jpg programando.png trabajando.png wtfm.jpg panelScrum.jpg\
 	kunagidashboard.png kunagiwhiteboard.png \
-	ventanaRota.jpg globos.jpg profesional.jpg ganador.jpg domino.jpg\
+	ventanaRota.jpg globos.jpg profesional.jpg ganador.jpg domino.jpg camino.jpg\
 	herramientas.jpg documentos.jpg contrato.jpg plan.jpg\
 	cleancode.png\
 	mentorsRobertMartin.jpg mentorsCunningham.jpg mentorsKentBeck.jpg
@@ -14,6 +14,8 @@ all:$(IMAGES)
 agilemanifestbg.jpg:
 	$(WGET) http://AgileManifesto.org/background.jpg
 
+camino.jpg:
+	$(WGET) http://elpoderdelamor.files.wordpress.com/2007/10/camino.jpg
 
 panico.jpg:
 	$(WGET) http://3.bp.blogspot.com/_pQ2w6P1DdW0/S8zUxg4imEI/AAAAAAAABNw/c49E4tIunWY/s1600/panico.jpg
