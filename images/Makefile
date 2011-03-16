@@ -4,7 +4,7 @@ IMAGES= agilemanifestbg.jpg panico.jpg scrum.jpg pomodoro.png junit.jpg	\
 	ventanaRota.jpg globos.jpg profesional.jpg ganador.jpg domino.jpg camino.jpg\
 	herramientas.jpg documentos.jpg contrato.jpg plan.jpg\
 	cleancode.png\
-	mentorsRobertMartin.jpg mentorsCunningham.jpg mentorsKentBeck.jpg
+	mentorsRobertMartin.jpg mentorsCunningham.jpg mentorsKentBeck.jpg mentorsBle.jpg
 
 WGET=wget -O $@
 
@@ -96,6 +96,9 @@ mentorsCunningham.jpg:
 
 mentorsKentBeck.jpg:
 	$(WGET) http://www.threeriversinstitute.org/Kent%202%20thumbnail.jpg
+
+mentorsBle.jpg:
+	$(WGET) http://lh4.ggpht.com/_Hge51C1L-AQ/S7ylVIVDwdI/AAAAAAAAAXU/0_Ga3jVnzM8/Carlos.jpg
 
 clean:
 	$(RM) $(IMAGES)
