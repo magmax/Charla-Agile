@@ -1,6 +1,6 @@
  \section{Principios}
 
-  \subsection{SOLID y FIRST}
+  \subsection{SOLID}
 
   \begin{frame}
    \frametitle{SOLID}
@@ -8,13 +8,48 @@
 
    \begin{itemize}
     \item \textbf{SRP} Simple Responsability Principle
+	  \only<2>{
+	  \\
+	  \begin{itemize}
+	   \item Cada objeto debería tener una única responsabilidad.
+	   \item Una responsabilidad es una razón para ser modificada.
+	  \end{itemize}
+	  }
     \item \textbf{OCP} Open Closed Principle
+	  \only<3>{
+	  \\
+	  ``Software entities (classes, modules, functions, ...) should be open
+	  for extension, but closed to modification''
+	  }
     \item \textbf{LSP} Liskov Substitution Principle
+	  \only<4>{
+	  \\
+	  Una clase debe poder sustituirse por cualquiera de sus subtipos.
+	  }
     \item \textbf{ISP} Interface Segregation Principle
+	  \only<5>{
+	  \begin{itemize}
+	   \item Los clientes no deben implementar interfaces que no vayan a utilizar.
+	   \item Es mejor tener varias interfaces pequeñas que una única interfaz.
+	  \end{itemize}
+	  }
     \item \textbf{DIP} Dependency Inversion Principle
+	  \only<6>{
+	  \\
+	  \begin{itemize}
+	   \item Las clases de alto nivel no deberían depender de las clases de
+		 bajo nivel. Ambas deberían depender de abstracciones.
+	   \item Las abstracciones no deberían depender de los detalles. Los
+		 detalles deberían depender de las abstracciones.
+	  \end{itemize}
+	  }
    \end{itemize}
   \end{frame}
 
+
+
+
+  \subsection{FIRST}
 
   \begin{frame}
    \frametitle{FIRST}
@@ -22,9 +57,30 @@
 
    \begin{itemize}
     \item \textbf{Fast}
+	  \only<2>{
+	  \\
+	   Las pruebas unitarias deben ejecutarse en unos segundos.
+	  }
     \item \textbf{Independent}
+	  \only<3>{
+	  \\
+	  Una prueba no debe depender de otra.
+	  }
     \item \textbf{Repeteable}
-    \item \textbf{Simple}
-    \item \textbf{Timely}
+	  \only<4>{
+	  \\
+	  El resultado de una prueba debe ser siempre el mismo.
+	  }
+    \item \textbf{Small}
+	  \only<5>{
+	  \\
+	  Las pruebas unitarias pequeñas son más sencillas de modificar
+	  y comprender.
+	  }
+    \item \textbf{Transparent}
+	  \only<6>{
+	  \\
+	  El propósito de cada prueba debe ser claro.
+	  }
    \end{itemize}
   \end{frame}

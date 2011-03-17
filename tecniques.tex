@@ -18,19 +18,19 @@
    \framesubtitle{Scrum en 6 palabras}
 
    \begin{itemize}
-    \item División en \textbf{Sprints}.
-    \item Reunión de \textbf{planificación} de Sprint.
-    \item \textbf{Scrum} diario.
-    \item Reunión de \textbf{seguimiento} de Sprint opcional.
-    \item Reunión de \textbf{evaluación} de Sprint.
-    \item \textbf{Panel}: Pendiente, Asignado, Terminado. Burndown.
+    \item<1-> División en \textbf{Sprints}.
+    \item<2-> Reunión de \textbf{planificación} de Sprint.
+    \item<3-> \textbf{Scrum} diario.
+    \item<4-> Reunión de \textbf{seguimiento} de Sprint opcional.
+    \item<5-> Reunión de \textbf{evaluación} de Sprint.
+    \item<6-> \textbf{Panel}: Pendiente, Asignado, Terminado. Burndown.
    \end{itemize}
   \end{frame}
 
   \begin{frame}
    \frametitle{Scrum, Kanban, Scrumban}
    \framesubtitle{Test Driven Development}
-
+   \transdissolve<1>
    \begin{center}
     {\small (Foto realizada por Luismi Caballé. ¡Gracias!)}
     \includegraphics[width=8cm]{images/panelScrum.jpg}
@@ -40,7 +40,7 @@
   \begin{frame}
    \frametitle{Scrum, Kanban, Scrumban}
    \framesubtitle{Aplicaciones: Kunagi}
-
+   \transdissolve<1->
    \begin{center}
     \only<1>{
     \includegraphics[width=11cm]{images/kunagiwhiteboard.png}
@@ -55,7 +55,7 @@
   \begin{frame}
    \frametitle{Scrum, Kanban, Scrumban}
    \framesubtitle{Aplicaciones: Agilefant}
-
+   \transdissolve<1->
    \begin{center}
     \only<1>{
     \includegraphics[width=7cm]{images/agilefantstories.png}
@@ -77,14 +77,53 @@
     \end{column}
     \begin{column}{7cm}
      \begin{itemize}
-      \item 25 minutos de máxima concentración.
-      \item 5 minutos descanso.
-      \item 2 listas.
-      \item Marcas.
+      \item<1-> 25 minutos de máxima concentración.
+      \item<2-> 5 minutos descanso.
+      \item<3-> 2 listas.
+      \item<4-> Marcas.
      \end{itemize}
     \end{column}
    \end{columns}
   \end{frame}
+
+  \begin{frame}
+   \frametitle{Integración contínua}
+   \framesubtitle{Concepto}
+
+   \begin{itemize}
+    \item Propuesta por Martin Fowler.
+    \item Consiste en hacer integraciones automáticas contínuamente.
+    \item Permite detectar problemas mucho antes.
+   \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+   \frametitle{Integración contínua}
+   \framesubtitle{Proceso}
+
+   Cada cierto tiempo:
+
+   \begin{itemize}
+    \item<+-> Se descargan los fuentes de un gestor de versiones.
+    \item<+-> Se compila.
+    \item<+-> Se ejecutan los tests.
+    \item<+-> Se crean informes.
+   \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+   \frametitle{Integración contínua}
+   \framesubtitle{Aplicaciones}
+
+   \begin{itemize}
+    \item Continuum (Apache)
+    \item Jenkins (CC)
+    \item CruiseControl (BSD)
+   \end{itemize}
+  \end{frame}
+
+
+
 
   \subsection{TDD}
 
@@ -105,9 +144,9 @@
 
    Pasos:
    \begin{enumerate}
-    \item Escribir el \textbf{test}.
-    \item Escribir el \textbf{código mínimo} que pasa el test.
-    \item \textbf{Refactorizar}.
+    \item<+-> Escribir el \textbf{test}.
+    \item<+-> Escribir el \textbf{código mínimo} que pasa el test.
+    \item<+-> \textbf{Refactorizar}.
    \end{enumerate}
   \end{frame}
 
@@ -115,16 +154,16 @@
   \begin{frame}
    \frametitle{Código limpio}
    \framesubtitle{Importancia}
-
+   \transdissolve<1->
    \begin{columns}
     \begin{column}{4cm}
      \includegraphics[width=4cm]{images/cleancode.png}
     \end{column}
     \begin{column}{7cm}
      \begin{itemize}
-      \item El código se escribe 1 vez, pero se lee muchas.
-      \item Las pruebas pueden ser la mejor documentación.
-      \item Tanto las pruebas como el código nos cuentan una historia.
+      \item<+-> El código se escribe 1 vez, pero se lee muchas.
+      \item<+-> Las pruebas pueden ser la mejor documentación.
+      \item<+-> Tanto las pruebas como el código nos cuentan una historia.
      \end{itemize}
     \end{column}
    \end{columns}
@@ -134,12 +173,12 @@
   \begin{frame}
    \frametitle{Código limpio}
    \framesubtitle{Importancia de las pruebas}
-
+   \transdissolve<1->
    Escribir pruebas \ldots
    \begin{itemize}
-    \item \ldots nos ayudará a escribir mejores pruebas.
-    \item \ldots nos obligará a escribir código fácil de probar.
-    \item \ldots mejorará la comprensión y usabilidad de nuestro código.
+    \item<+-> \ldots nos ayudará a escribir mejores pruebas.
+    \item<+-> \ldots nos obligará a escribir código fácil de probar.
+    \item<+-> \ldots mejorará la comprensión y usabilidad de nuestro código.
    \end{itemize}
   \end{frame}
 
@@ -152,6 +191,7 @@
  \begin{frame}
   \frametitle{Profesionales}
   \framesubtitle{Ward Cunningham}
+  \transdissolve<1->
   \begin{columns}
    \begin{column}{6cm}
     \only<1>{
@@ -186,6 +226,7 @@
  \begin{frame}
   \frametitle{Profesionales}
   \framesubtitle{Kent Beck}
+  \transdissolve<1->
   \begin{columns}
    \begin{column}{4cm}
     \includegraphics[width=4cm]{images/mentorsKentBeck.jpg}
@@ -200,10 +241,11 @@
     }
     \only<2>{
     Rules for simple design:\\
-    1. Appropriate for the intended audience\\
-    2. Every idea communicated\\
-    3. Factored. (no duplication)\\
-    4. Minimal. (fewest elements)
+    1. Runs all the tests\\
+    2. Contains no duplication\\
+    3. Expresses all the intent of the programmer\\
+    4. Minimizes the number of classes and methods.\\
+    The rules are given in order of importance.
     }
    \end{column}
   \end{columns}
@@ -236,9 +278,9 @@
     \begin{column}{7cm}
      La ``\textbf{Deuda técnica}'' es como saltarse una pieza:
      \begin{itemize}
-      \item Iremos más rápido.
-      \item El programa funcionará.
-      \item Tarde o temprano ocurrirá un problema y tendremos que
+      \item<+-> Iremos más rápido.
+      \item<+-> El programa funcionará.
+      \item<+-> Tarde o temprano ocurrirá un problema y tendremos que
 	    averiguar por qué ha ocurrido.
      \end{itemize}
     \end{column}
