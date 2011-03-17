@@ -86,16 +86,94 @@
    \end{columns}
   \end{frame}
 
+
+  \subsection{Herramientas}
+
+  \begin{frame}
+   \frametitle{Sistemas de control de versiones}
+   \framesubtitle{Para todos los gustos}
+
+   \begin{itemize}
+    \item CVS
+    \item Subversion
+    \item Bazaar
+    \item Mercurial
+    \item Git
+   \end{itemize}
+  \end{frame}
+
+  \begin{frame}
+   \frametitle{Sistemas de control de versiones}
+   \framesubtitle{Órdenes}
+   \transdissolve<1->
+
+   \only<+>{
+   Subversion
+   \begin{itemize}
+    \item Crear repo: \$ svnadmin create
+    \item Descargar: \$ svn checkout
+    \item Añadir: \$ svn add
+    \item Actualizar: \$ svn update
+    \item Subir: \$ svn commit
+   \end{itemize}
+   }
+   \only<+>{
+   Mercurial
+   \begin{itemize}
+    \item Crear repo: \$ hg init
+    \item Descargar: \$ hg clone
+    \item Añadir: \$ hg add
+    \item Actualizar: \$ hg update
+    \item Subir: \$ hg commit
+   \end{itemize}
+   }
+   \only<+>{
+   Git
+   \begin{itemize}
+    \item Crear repo: \$ git init
+    \item Descargar: \$ git clone
+    \item Añadir: \$ git add
+    \item Actualizar: \$ git update
+    \item Subir: \$ git commit
+   \end{itemize}
+   }
+   \only<+>{
+   Bazaar
+   \begin{itemize}
+    \item Crear repo: \$ bzr init
+    \item Descargar: \$ bzr branch
+    \item Añadir: \$ bzr add
+    \item Actualizar: \$ bzr merge
+    \item Subir: \$ bzr commit
+   \end{itemize}
+  }
+  \end{frame}
+
+  \begin{frame}
+   \frametitle{Sistemas de control de versiones}
+   \framesubtitle{¡¡Gratis!!}
+
+   \begin{itemize}
+    \item <+-> https://github.com (Git)
+    \item <+-> https://bitbucket.org (Mercurial)
+    \item <+-> http://code.google.com/hosting (SVN/Mercurial)
+    \item <+-> http://alioth.debian.org (todos; Debian)
+    \item <+-> http://savannah.gnu.org (todos)
+    \item <+-> http://gna.org (todos)
+   \end{itemize}
+  \end{frame}
+
   \begin{frame}
    \frametitle{Integración contínua}
    \framesubtitle{Concepto}
 
    \begin{itemize}
-    \item Propuesta por Martin Fowler.
-    \item Consiste en hacer integraciones automáticas contínuamente.
-    \item Permite detectar problemas mucho antes.
+    \item<+-> Propuesta por Martin Fowler.
+    \item<+-> Consiste en hacer integraciones automáticas contínuamente.
+    \item<+-> Permite detectar problemas mucho antes.
    \end{itemize}
   \end{frame}
+
 
   \begin{frame}
    \frametitle{Integración contínua}
@@ -122,6 +200,33 @@
    \end{itemize}
   \end{frame}
 
+
+  \begin{frame}
+   \frametitle{Integración contínua}
+   \framesubtitle{Continuum}
+
+   \begin{center}
+    \includegraphics[width=11cm]{images/continuum.png}
+   \end{center}
+  \end{frame}
+
+  \begin{frame}
+   \frametitle{Integración contínua}
+   \framesubtitle{Jenkins}
+
+   \begin{center}
+    \includegraphics[width=16cm]{images/jenkins.png}
+   \end{center}
+  \end{frame}
+
+  \begin{frame}
+   \frametitle{Integración contínua}
+   \framesubtitle{CruiseControl}
+
+   \begin{center}
+    \includegraphics[width=11cm]{images/cruisecontrol.png}
+   \end{center}
+  \end{frame}
 
 
 

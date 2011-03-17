@@ -1,6 +1,7 @@
 IMAGES= agilemanifestbg.jpg panico.jpg scrum.jpg pomodoro.png junit.jpg	\
 	pruebas.jpg programando.png trabajando.png wtfm.jpg panelScrum.jpg\
 	kunagidashboard.png kunagiwhiteboard.png agilefantstories.png agilefantburndown.png\
+	jenkins.png continuum.png cruisecontrol.png\
 	ventanaRota.jpg globos.jpg profesional.jpg ganador.jpg domino.jpg camino.jpg\
 	herramientas.jpg documentos.jpg contrato.jpg plan.jpg\
 	cleancode.png\
@@ -72,6 +73,15 @@ agilefantstories.png:
 
 agilefantburndown.png:
 	$(WGET) http://www.userstories.com/system/product_image/0000/0144/screen_4_iteration_burndown.png
+
+jenkins.png:
+	$(WGET) http://c0485891.cdn.cloudfiles.rackspacecloud.com/90286192-8645-e011-8d53-0200d897d049_1_full.png
+
+continuum.png:
+	$(WGET) http://continuum.apache.org/images/screenshots/surefire-report.png
+
+cruisecontrol.png:
+	$(WGET) http://cruisecontrol.sourceforge.net/dashboard/builddetail.jpg
 
 ventanaRota.jpg:
 	$(WGET) http://nocheoscuradelalma.files.wordpress.com/2011/02/ventana-rota.jpg
